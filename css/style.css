@@ -1008,5 +1008,8 @@ template {
   .map {
     height: 173px;
   }
+  .map-size {
+    width: 540px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
