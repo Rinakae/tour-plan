@@ -1,11 +1,11 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSider = new Swiper('.hotel-slider', {
   // Optional parameters 
   loop: true,
 
   // Navigation arrows
   navigation: {
-    prevEl: '.slider-button__prev',
-    nextEl: '.slider-button__next',
+    prevEl: '.hotel-slider__button--prev',
+    nextEl: '.hotel-slider__button--next',
   },
 
 keyboard: {
@@ -14,3 +14,21 @@ keyboard: {
   },
   
 });
+
+const reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters 
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    prevEl: '.reviews-slider__button--prev',
+    nextEl: '.reviews-slider__button--next',
+  },
+
+keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  
+});
+
