@@ -834,6 +834,227 @@ template {
   border: none;
 }
 
+.packages-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(min-content, max-content);
+      grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
+      grid-template-rows: minmax(min-content, max-content);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 70px;
+}
+
+.packages-grid > div {
+  border-radius: 8px;
+  background-color: #0A223D;
+  overflow: hidden;
+}
+
+.card-grid-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  color: #fff;
+}
+
+.card-grid-1__img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-grid-1-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 46px 21px 30px 43px;
+}
+
+.card-grid-1-text__stars {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.card-grid-1-text__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.card-grid-1-text__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.card-grid-1-text__oldprice {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.card-grid-1-text__price {
+  -ms-flex-item-align: space-between;
+      align-self: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-grid-1-text__pricetag {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card-grid-1-text__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 26px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-card__text {
+  margin-bottom: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.booking-card__icon {
+  margin-right: 14px;
+}
+
+.card-grid {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-grid__img {
+  width: 100%;
+}
+
+.card-grid-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 21px 25px 32px;
+  color: #fff;
+  height: 50%;
+}
+
+.card-grid-text__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.card-grid-text__oldprice {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.card-grid-text__price {
+  -ms-flex-item-align: space-between;
+      align-self: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-grid-text__pricetag {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card-grid-text__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 26px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  cursor: pointer;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1168,6 +1389,9 @@ template {
     width: 230px;
     height: 230px;
   }
+  .card-grid__img {
+    height: 50%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1252,6 +1476,10 @@ template {
   .card {
     width: 339px;
     height: 255px;
+  }
+  .packages-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1366,6 +1594,18 @@ template {
   .card {
     width: 48%;
     height: 255px;
+  }
+  .card-grid-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-grid-1__img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1488,6 +1728,30 @@ template {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .packages-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .card-grid-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    color: #fff;
+  }
+  .card-grid-1__img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
