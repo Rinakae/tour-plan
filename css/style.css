@@ -1390,7 +1390,7 @@ template {
     height: 230px;
   }
   .card-grid__img {
-    height: 50%;
+    min-height: 250px;
   }
 }
 
@@ -1606,6 +1606,20 @@ template {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card-grid-text__price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-grid-text__pricetag {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 18px;
+  }
+  .card-grid-text__button {
+    width: 100%;
   }
 }
 
