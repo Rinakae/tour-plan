@@ -1,3 +1,14 @@
+.packages
+  padding-top: 40px
+  &__title
+    margin-top: 0
+    margin-bottom: 65px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
 .packages-grid
   display: grid
   grid-template-rows: minmax(min-content, max-content)
@@ -6,6 +17,7 @@
   justify-content: space-between
   align-content: center
   margin-bottom: 70px
+
   & > div
     border-radius: 8px
     background-color: $dark
@@ -19,6 +31,19 @@
   grid-row-end: 2
   grid-column-end: 3
   color: $light
+  position: relative
+  &__sale-label
+    position: absolute
+    left: 0
+    top: 26px
+    padding: 8px 12px
+    border-radius: 0px 4px 4px 0px
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
   &__img
     width: 50%
     object-fit: cover
@@ -83,8 +108,22 @@
 .card-grid
   justify-content: space-between
   height: fit-content
+  position: relative
+  &__sale-label
+    position: absolute
+    left: 0
+    top: 26px
+    padding: 4px 9px
+    border-radius: 0px 4px 4px 0px
+    font-style: normal
+    font-weight: 700
+    font-size: 8px
+    line-height: 10px
+    color: $light
+    background-color: $primary
   &__img
     width: 100%
+    height: 250px
   &-text
     display: flex
     flex-direction: column

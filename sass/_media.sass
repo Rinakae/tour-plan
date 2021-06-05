@@ -9,7 +9,8 @@
     height: 230px
   .card-grid
     &__img
-      min-height: 250px
+      object-fit: cover
+
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -142,24 +143,47 @@
         padding: 0 30px 30px
         &::after, &::before
           display: none
-  .card
-    width: 48%
-    height: 255px
+  .packages
+    &__title
+      font-size: 24px
+      margin-bottom: 40px
   .card-grid-1
     flex-direction: column
+    &-text
+      padding: 15px
+      &__title
+        font-size: 14px
+        margin-bottom: 10px
+      &__text
+        font-size: 12px
+        margin-bottom: 15px
     &__img
       width: 100%
-      height: 300px
+      height: 250px
       object-fit: cover
   .card-grid
+    &__img
+      height: 200px
     &-text
+      padding: 10px
+      &__title
+        font-size: 14px
+        margin-bottom: 10px
       &__price
         flex-direction: column
+      &__oldprice
+        align-self: flex-end
       &__pricetag
-        align-self: flex-start
+        align-self: flex-end
         font-size: 18px
       &__button
         width: 100%
+  .booking-card
+    &__text
+      margin-bottom: 3px
+    &__icon
+      margin-right: 5px
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -176,9 +200,6 @@
   .activities
     &-wrapper
       min-height: 460px
-  .card
-    width: 48%
-    height: 220px
 @media (min-width: 320px) and (max-width: 480px)
   .container
     width: 89%
@@ -242,6 +263,9 @@
   .card
     width: 100%
     height: 255px
+    &-grid
+      &__img
+        height: 200px
     &:nth-child(2)
       order: 2
     &:nth-child(3)
