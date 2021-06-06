@@ -68,12 +68,27 @@
       line-height: 160.6%
       margin-top: 0
       margin-bottom: 34px
-    &__oldprice
-      font-style: normal
-      font-weight: normal
-      font-size: 14px
-      line-height: 18px
-      text-decoration-line: line-through
+      height: 154px
+      overflow-y: scroll
+      scroll-behavior: auto
+      scrollbar-color: #929196 #143861
+      scrollbar-width: thin
+      &::-webkit-scrollbar
+        width: 7px
+        background-color: #143861
+      &::-webkit-scrollbar-thumb
+        background-color: #929196
+        border-radius: 9em
+        box-shadow: inset 1px 1px 10px #cab9b9
+      &::-webkit-scrollbar-thumb:hover
+        background-color: #253861
+
+  &__oldprice
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
     &__price
       align-self: space-between
       display: flex
