@@ -1660,8 +1660,8 @@ template {
   margin-right: 10px;
 }
 
-.footer__paycard-img {
-  margin-left: 268px;
+.footer__condition-links {
+  margin-right: 277px;
 }
 
 @media (max-width: 1200px) {
@@ -1678,6 +1678,10 @@ template {
   .card-grid__img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1767,6 +1771,63 @@ template {
   .packages-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 40px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+  .footer__sotial-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 1;
+  }
+  .footer__additional {
+    grid-column: span 3;
+  }
+  .footer__contact-details {
+    grid-column: span 5;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 5;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .footer__condition {
+    margin-top: 60px;
+  }
+  .footer__condition {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__condition-links {
+    margin-right: 0;
   }
 }
 
@@ -1939,6 +2000,27 @@ template {
   .booking-card__icon {
     margin-right: 5px;
   }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .footer__logo {
+    width: 104px;
+  }
+  .footer__contact-details {
+    padding-top: 20px;
+    grid-column: span 6;
+  }
+  .footer__contact-form {
+    grid-column: span 6;
+  }
+  .footer__form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1956,6 +2038,57 @@ template {
   }
   .activities-wrapper {
     min-height: 460px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__sotial-network {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__additional {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__categories {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__legal {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -2083,6 +2216,38 @@ template {
     height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .footer__sotial-network {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
+  .footer__icon-wrapper {
+    min-width: 31px;
+  }
+  .footer__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__condition {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__condition-links {
+    margin-bottom: 10px;
+  }
+  .footer__condition-link {
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
