@@ -968,7 +968,21 @@ template {
   background-color: #253861;
 }
 
-.card-grid-1__oldprice {
+.card-grid-1-text__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 26px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  cursor: pointer;
+}
+
+.card-grid-1-text__oldprice {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -977,7 +991,7 @@ template {
           text-decoration-line: line-through;
 }
 
-.card-grid-1__oldprice__price {
+.card-grid-1-text__price {
   -ms-flex-item-align: space-between;
       align-self: space-between;
   display: -webkit-box;
@@ -991,25 +1005,11 @@ template {
           align-items: center;
 }
 
-.card-grid-1__oldprice__pricetag {
+.card-grid-1-text__pricetag {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-}
-
-.card-grid-1__oldprice__button {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  padding: 11px 26px;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #EC1F46;
-  border: none;
-  cursor: pointer;
 }
 
 .booking-card__text {
