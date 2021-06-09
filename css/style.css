@@ -2173,6 +2173,9 @@ template {
   .footer__categories, .footer__additional, .footer__legal {
     min-width: auto;
   }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
 }
 
 /* -----------------------------ширина 576-----------------------------------------*/
@@ -2334,6 +2337,9 @@ template {
   }
   .footer__form {
     width: 100%;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
   }
   .footer__title--mb-3 {
     margin-bottom: 15px;

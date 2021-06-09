@@ -288,6 +288,10 @@
   .footer
     &__categories, &__additional, &__legal
       min-width: auto
+    &__title
+      &--inline
+        margin-bottom: 20px
+
 /* -----------------------------ширина 576-----------------------------------------*/
 @media (max-width: 576px)
   .logo
@@ -337,7 +341,6 @@
         grid-column: 1
     &__input
       flex-basis: 100%
-
   .footer
     padding-top: 69px
     &-wrapper
@@ -355,7 +358,6 @@
       grid-column: 1 / 2
     &__legal
       position: unset
-
       grid-row: 3 / 4
       grid-column: 1 / 2
     &__social
@@ -366,6 +368,7 @@
         margin-left: 0
         grid-row: 2 / 3
         grid-column: 1 / 2
+
     &__contact
       &-details
         grid-row: 6 / 7
@@ -382,6 +385,8 @@
     &__form
       width: 100%
     &__title
+      &--inline
+        margin-bottom: 20px
       &--mb-3
         margin-bottom: 15px
     &__textarea
