@@ -160,7 +160,19 @@
       right: 0
       bottom: 0
       top: 70px
-      height: 498px
+      max-height: 472px
+      overflow: scroll
+      scrollbar-color: #929196 #143861
+      scrollbar-width: thin
+      &::-webkit-scrollbar
+        width: 7px
+        background-color: #143861
+      &::-webkit-scrollbar-thumb
+        background-color: #929196
+        border-radius: 9em
+        box-shadow: inset 1px 1px 10px #cab9b9
+      &::-webkit-scrollbar-thumb:hover
+        background-color: #253861
       &__visible
         display: block
     &-menu
@@ -171,7 +183,7 @@
         &_mobile
           &_visible
             display: block
-            margin-bottom: 39px
+            margin-bottom: 27px
   .menu
     &-button
       height: 11px
@@ -388,7 +400,7 @@
       &--inline
         margin-bottom: 20px
       &--mb-3
-        margin-bottom: 15px
+        margin-bottom: 25px
     &__textarea
       margin-bottom: 15px
     &__condition
