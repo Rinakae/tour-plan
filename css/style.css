@@ -1984,21 +1984,6 @@ template {
     top: 70px;
     max-height: 472px;
     overflow: scroll;
-    scrollbar-color: #929196 #143861;
-    scrollbar-width: thin;
-  }
-  .navbar-bottom::-webkit-scrollbar {
-    width: 7px;
-    background-color: #143861;
-  }
-  .navbar-bottom::-webkit-scrollbar-thumb {
-    background-color: #929196;
-    border-radius: 9em;
-    -webkit-box-shadow: inset 1px 1px 10px #cab9b9;
-            box-shadow: inset 1px 1px 10px #cab9b9;
-  }
-  .navbar-bottom::-webkit-scrollbar-thumb:hover {
-    background-color: #253861;
   }
   .navbar-bottom__visible {
     display: block;
