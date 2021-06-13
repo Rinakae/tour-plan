@@ -1731,6 +1731,25 @@ template {
   color: #BDBDBD;
 }
 
+.thankyou-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.thankyou__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.thankyou__text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
