@@ -176,7 +176,7 @@
               <span class="booking__num">12100</span>
             </a>
           </div> <!--/.booking__call-center-->
-          <button class="button booking__button">View Other Options</button>
+          <button data-toggle="modal" class="button booking__button">View Other Options</button>
 
         </div> <!--/.booking-->
 
@@ -573,12 +573,34 @@
     </div>
 
   </footer>
-  
+
+  <div class="modal">       
+      <div class="modal__overlay">
+      </div>      
+        <div class="modal__dialog">
+          <div class="modal__dialog-wrapper">
+            <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
+            <h2 class="modal__title">Booking</h2>
+            <form action="send.php" method="POST" class="modal__form">
+              <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name">
+              <input type="text" class="modal__input modal__placeholder" placeholder="Phone Number*" name="phone">
+              <input type="text" class="modal__input modal__placeholder" placeholder="Email*" name="email">
+              <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
+                name="message"></textarea>
+              <div class="modal__button-block">
+                <button class="button modal__button">Send</button>
+                <span class="modal__info">* Required Fields</span>
+              </div>
+            </form>
+          </div>
+          
+        </div>     
+  </div>
 
 
 
-  
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

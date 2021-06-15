@@ -125,6 +125,9 @@
       margin-top: 56px
       &-links
         margin-right: 0
+  .modal
+    &__dialog
+      padding: 30px 50px
         /*----------------------ширина 767-----------------------------------*/
 @media (max-width: 767px)
   .container
@@ -292,7 +295,18 @@
     &__title
       &--inline
         margin-bottom: 20px
-
+  .modal
+    &__dialog
+      position: absolute
+      top: 10%
+      width: 55%
+      transform: translate(-50%, 0)
+      padding: 20px 20px
+    &__button
+      flex-basis: 100%
+      margin-bottom: 15px
+      &-block
+        flex-wrap: wrap
 /* -----------------------------ширина 576-----------------------------------------*/
 @media (max-width: 576px)
   .logo
@@ -369,7 +383,6 @@
         margin-left: 0
         grid-row: 2 / 3
         grid-column: 1 / 2
-
     &__contact
       &-details
         grid-row: 6 / 7
@@ -398,6 +411,9 @@
       &-link
         margin-right: 3px
         font-size: 11px
+  .modal
+    &__dialog
+      width: 65%
 
       /* ширина ----------------------480-320-----------------------------------*/
 @media (min-width: 320px) and (max-width: 480px)
@@ -508,3 +524,6 @@
         margin-bottom: 10px
       &-link
         margin-right: 5px
+  .modal
+    &__dialog
+      width: 75%
