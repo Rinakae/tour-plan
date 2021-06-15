@@ -46,7 +46,7 @@ try {
  
     // Отправка сообщения
     $mail->isHTML(true);
-    $mail->Subject = $title;
+    $mail->Subject = $title;    
     $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
