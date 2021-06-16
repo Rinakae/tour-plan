@@ -297,10 +297,6 @@
         margin-bottom: 20px
   .modal
     &__dialog
-      position: absolute
-      top: 10%
-      width: 55%
-      transform: translate(-50%, 0)
       padding: 20px 20px
     &__button
       flex-basis: 100%
@@ -526,4 +522,12 @@
         margin-right: 5px
   .modal
     &__dialog
-      width: 75%
+      width: 100%
+@media (max-height: 487px)
+  .modal
+    &__dialog
+      top: 0
+      transform: translate(-50%, 0)
+      min-height: 100vh
+      height: 100vh
+      overflow-y: auto
