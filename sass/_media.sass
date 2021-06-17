@@ -12,7 +12,8 @@
       object-fit: cover
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
       /*---------------------------ширина 992---------------------------------*/
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -35,7 +36,8 @@
       line-height: 15px
   .search
     &__input
-      width: 340px
+      &-group
+        width: 340px
   .hotel
     padding-bottom: 60px
     &-grid
@@ -119,7 +121,8 @@
     &__form
       width: 77%
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__condition
       justify-content: space-between
       margin-top: 56px
@@ -351,7 +354,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .footer
     padding-top: 69px
     &-wrapper
@@ -522,11 +526,11 @@
         margin-right: 5px
   .modal
     &__dialog
-      width: 100%
+      width: 90%
 @media (max-height: 487px)
   .modal
     &__dialog
-      top: 0
+      top: 20px
       transform: translate(-50%, 0)
       min-height: 100vh
       height: 100vh

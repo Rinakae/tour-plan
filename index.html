@@ -359,9 +359,17 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
   
-      <form action="send-2.php" method="POST" class="subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name='email'>
-        <button class="subscribe__button">Send</button>
+      <form action="send-2.php" method="POST" class="subscribe form">
+        <div class="subscribe__wrapper">
+          <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+        </div>
+        <div class="subscribe__wrapper-button">
+          <button class="subscribe__button">Send</button>
+        </div>
+                          
+          
+        
+        
       </form>
     </div>
   </section> <!-- /.newsletter -->
@@ -539,17 +547,24 @@
 
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input 
-              type="text" 
-              class="footer__input footer__placeholder" 
-              placeholder="Your Full Name*" 
-              name="name">
-            <input 
-              type="text" 
-              class="footer__input footer__placeholder" 
-              placeholder="Phone Number*"
-              name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input 
+                type="text" 
+                class="footer__input footer__placeholder" 
+                placeholder="Your Full Name*" 
+                name="name" 
+                required>
+            </div>
+            <div class="footer__input-group">
+              <input 
+                type="tel" 
+                class="footer__input footer__placeholder" 
+                placeholder="Phone Number*" 
+                name="phone" 
+                required>
+            </div>
+            
             <textarea cols="30" rows="10" 
               class="footer__textarea footer__placeholder" 
               placeholder="Message"
@@ -581,10 +596,10 @@
           
             <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
             <h2 class="modal__title">Booking</h2>
-            <form action="send.php" method="POST" class="modal__form">
-              <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name">
-              <input type="text" class="modal__input modal__placeholder" placeholder="Phone Number*" name="phone">
-              <input type="text" class="modal__input modal__placeholder" placeholder="Email*" name="email">
+            <form action="send.php" method="POST" class="modal__form form">
+              <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name" required minlength="2"> 
+              <input type="tel" class="modal__input modal__placeholder phone" placeholder="Phone Number*" name="phone" required>
+              <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
               <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
                 name="message"></textarea>
               <div class="modal__button-block">
@@ -599,8 +614,11 @@
 
 
 
-<script src="js/swiper-bundle.min.js"></script>
+
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
