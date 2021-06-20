@@ -1663,6 +1663,9 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .footer__placeholder {
@@ -1805,7 +1808,6 @@ template {
   top: 50%;
   left: 50%;
   max-width: 478px;
-  min-height: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1817,6 +1819,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -2723,7 +2726,6 @@ template {
     top: 20px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    min-height: 100vh;
     height: 100vh;
     overflow-y: auto;
   }
