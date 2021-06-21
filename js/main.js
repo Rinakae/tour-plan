@@ -92,4 +92,6 @@ $(this).mask('+7 (999) 999-99-99');
 
   AOS.init();
 
+  document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 });

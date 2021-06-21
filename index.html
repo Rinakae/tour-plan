@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.gstatic.com">
+<link rel="preload" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.gstatic.com">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
@@ -137,10 +137,30 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item"><img src="img/slide-1.jpg" alt="slide" class="hotel-slider__img"></div>
-              <div class="swiper-slide hotel-slider__item"><img src="img/slide-2.jpg" alt="slide" class="hotel-slider__img"></div>
-              <div class="swiper-slide hotel-slider__item"><img src="img/slide-3.jpg" alt="slide" class="hotel-slider__img"></div>
-              <div class="swiper-slide hotel-slider__item"><img src="img/slide-4.jpg" alt="slide" class="hotel-slider__img"></div>
+              <div class="swiper-slide hotel-slider__item">                
+                <img srcset="img/slide-1-280.jpg 320w,
+                             img/slide-1-440.jpg 480w,
+                             img/slide-1.jpg 800w" sizes="(max-width: 320px) 280px,
+                            (max-width: 480px) 440px,
+                            800px" src="img/slide-1.jpg" alt="slide" class="hotel-slider__img">
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img src="img/slide-2.jpg" alt="slide" class="hotel-slider__img">
+              </div>
+              <div class="swiper-slide hotel-slider__item">                
+                <img srcset="img/slide-3-280.jpg 320w,
+                                             img/slide-3-440.jpg 480w,
+                                             img/slide-3.jpg 800w" sizes="(max-width: 320px) 280px,
+                                            (max-width: 480px) 440px,
+                                            800px" src="img/slide-3.jpg" alt="slide" class="hotel-slider__img">
+              </div>
+              <div class="swiper-slide hotel-slider__item">                
+                <img srcset="img/slide-4-280.jpg 320w,
+                                             img/slide-4-440.jpg 480w,
+                                             img/slide-4.jpg 800w" sizes="(max-width: 320px) 280px,
+                                            (max-width: 480px) 440px,
+                                            800px" src="img/slide-4.jpg" alt="slide" class="hotel-slider__img">
+              </div>
               <div class="swiper-slide hotel-slider__item"><img src="img/slide-5.jpg" alt="slide" class="hotel-slider__img"></div>
             </div>
 
@@ -205,7 +225,7 @@
       <div class="packages-grid">
 
         <div class="card-grid-1">
-          <img src="img/packages-1.png" alt="Hotel Blue Haven" class="card-grid-1__img">
+          <img src="img/packages-1.jpg" alt="Hotel Blue Haven" class="card-grid-1__img">
           <span class="card-grid-1__sale-label">Flash Offer</span>
           <div class="card-grid-1-text">
             <img src="img/Stars.svg" alt="Stars" class="card-grid-1-text__stars">
@@ -241,7 +261,7 @@
           </div> <!-- /.card-grid-1 -->      
         
           <div class="card-grid">
-            <img src="img/packages-2.png" alt="LUX* Belle Mare" class="card-grid__img">
+            <img src="img/packages-2.jpg" alt="LUX* Belle Mare" class="card-grid__img">
             <span class="card-grid__sale-label">Flash Offer</span>
             <div class="card-grid-text">              
               <h2 class="card-grid-text__title">LUX* Belle Mare</h2>              
@@ -268,7 +288,7 @@
           </div> <!-- /.card-grid-->
 
           <div class="card-grid">
-            <img src="img/packages-3.png" alt="White Palace" class="card-grid__img">
+            <img src="img/packages-3.jpg" alt="White Palace" class="card-grid__img">
             <span class="card-grid__sale-label">Flash Offer</span>
             <div class="card-grid-text">              
               <h2 class="card-grid-text__title">White Palace</h2>
@@ -295,7 +315,7 @@
           </div> <!-- /.card-grid-->        
           
           <div class="card-grid">
-            <img src="img/packages-4.png" alt="Luxury Place" class="card-grid__img">
+            <img src="img/packages-4.jpg" alt="Luxury Place" class="card-grid__img">
             <span class="card-grid__sale-label">Flash Offer</span>
             <div class="card-grid-text">              
               <h2 class="card-grid-text__title">Luxury Place</h2>
@@ -322,7 +342,7 @@
           </div> <!-- /.card-grid-->
 
           <div class="card-grid">
-            <img src="img/packages-5.png" alt="Hotel Five Star" class="card-grid__img">
+            <img src="img/packages-5.jpg" alt="Hotel Five Star" class="card-grid__img">
             <span class="card-grid__sale-label">Flash Offer</span>
             <div class="card-grid-text">              
               <h2 class="card-grid-text__title">Hotel Five Star</h2>
@@ -438,25 +458,25 @@
       <div class="activities-wrapper">
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="100" data-aos-duration="900">
-          <img src="img/activ-1.png" alt="The curious corner of chamarel" class="activcard__image">
+          <img src="img/activ-1.jpg" alt="The curious corner of chamarel" class="activcard__image">
           <h3 class="activcard__title">The curious corner<br>of chamarel</h3>
           <button class="activcard__button">Book Now</button>
         </div> 
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="300" data-aos-duration="800">
-          <img src="img/activ-2.png" alt="Gymkhana club golf course" class="activcard__image">
+          <img src="img/activ-2.jpg" alt="Gymkhana club golf course" class="activcard__image">
           <h3 class="activcard__title">Gymkhana club golf<br>course</h3>
           <button class="activcard__button">Book Now</button>
         </div>
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="200" data-aos-duration="900">
-          <img src="img/activ-3.png" alt="Tamarind falls hiking trip - full day" class="activcard__image">
+          <img src="img/activ-3.jpg" alt="Tamarind falls hiking trip - full day" class="activcard__image">
           <h3 class="activcard__title">Tamarind falls hiking<br>trip - full day</h3>
           <button class="activcard__button">Book Now</button>
         </div>
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="400" data-aos-duration="800">
-          <img src="img/activ-4.png" alt="The blue marine discovery quest" class="activcard__image">
+          <img src="img/activ-4.jpg" alt="The blue marine discovery quest" class="activcard__image">
           <h3 class="activcard__title">The blue marine discovery<br>quest</h3>
           <button class="activcard__button">Book Now</button>
         </div>
@@ -584,7 +604,7 @@
           <a href="#" class="footer__condition-link">Conditions of use</a>
           <a href="#" class="footer__condition-link">Cancellation policy</a>
         </div>                      
-        <img src="img/pay-card.png" alt="Paycards" class="footer__condition-paycard">
+        <img src="img/pay-card.jpg" alt="Paycards" class="footer__condition-paycard">
       </div>
 
     </div>
@@ -613,29 +633,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
