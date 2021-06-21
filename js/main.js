@@ -80,6 +80,7 @@ $(document).ready(function () {
       },
       phone: {
         required: "Please specify your phone number",
+        minlength: "Please enter at least 10 characters",
       },
     }
   })

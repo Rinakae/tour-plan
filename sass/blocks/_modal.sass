@@ -1,5 +1,4 @@
 .modal
-
   &__overlay
     position: fixed
     left: 0
@@ -7,28 +6,30 @@
     right: 0
     bottom: 0
     background-color: rgba(0, 143, 223, 0.39)
-    z-index: 100
+    z-index: 103
     visibility: hidden
     opacity: 0
     transition: opacity 0,5s
+    overflow-y: auto
+    display: flex
+    justify-content: flex-start
+    align-items: center
     &--visible
       visibility: visible
       opacity: 1
   &__dialog
-    position: fixed
-    top: 50%
-    left: 50%
+    margin: auto
     max-width: 478px
+    min-height: 478px
     padding: 33px 88px
     background-color: $dark
-    transform: translate(-50%, -50%)
     color: $light
     border-radius: 8px
     z-index: 102
     visibility: hidden
     opacity: 0
     transition: opacity 0.3s
-    overflow-y: auto
+    position: relative
     &--visible
       visibility: visible
       opacity: 1

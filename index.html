@@ -532,16 +532,16 @@
                 <img src="img/phone-call-footer.svg" alt="icon: phone call" class="footer__icon">
               </div>                 
               <div class="footer__link-wrapper">
-                Tel (business hours) : <a href="tel: +375252691500" class="footer__tel-link">269 1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel: 52-56-61-38" class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;20:00&#160;pm)<br>
-                Tel (hotline) Sunday: <a href="tel: 52-56-61-38" class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;14:00&#160;pm)
+                Tel (business hours) : <a href="tel:+375252691500" class="footer__tel-link">269 1500</a><br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;20:00&#160;pm)<br>
+                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;14:00&#160;pm)
               </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/email.svg" alt="icon: email" class="footer__icon">
               </div>
-              <a href="mailto: cherly.lawson@example.com" class="footer__email-link">cherly.lawson@example.com</a>
+              <a href="mailto:cherly.lawson@example.com" class="footer__email-link">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div> <!-- /.footer__contact-details -->
@@ -564,7 +564,7 @@
                 placeholder="Phone Number*" 
                 name="phone" 
                 required
-                required minlength="18">
+                minlength="18">
             </div>
             
             <textarea cols="30" rows="10" 
@@ -591,28 +591,72 @@
 
   </footer>
 
-  <div class="modal">       
-      <div class="modal__overlay">
-      </div>      
-        <div class="modal__dialog">
-          
-            <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
-            <h2 class="modal__title">Booking</h2>
-            <form action="send.php" method="POST" class="modal__form form">
-              <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name" required minlength="2"> 
-              <input type="tel" class="modal__input modal__placeholder phone" placeholder="Phone Number*" name="phone" required minlength="18">
-              <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
-              <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
-                name="message"></textarea>
-              <div class="modal__button-block">
-                <button class="button modal__button">Send</button>
-                <span class="modal__info">* Required Fields</span>
-              </div>
-            </form>
-          
-          
-        </div>     
+  
+<!-- 
+<div class="modal">
+    <div class="modal__overlay">
+    </div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
+      <h2 class="modal__title">Booking</h2>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name" required
+          minlength="2">
+        <input type="tel" class="modal__input modal__placeholder phone" placeholder="Phone Number*" name="phone" required
+          minlength="18">
+        <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
+        <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
+          name="message"></textarea>
+        <div class="modal__button-block">
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+      </form>
+    </div>
   </div>
+-->
+  
+
+<div class="modal__overlay">  
+  <div class="modal__dialog">
+    <a href="#" class="modal__close"><img src="img/close.svg" alt="icon: close" class="modal__close-img"></a>
+    <h2 class="modal__title">Booking</h2>
+    <form action="send.php" method="POST" class="modal__form form">
+      <input type="text" class="modal__input modal__placeholder" placeholder="Your Full Name*" name="name" required
+        minlength="2">
+      <input type="tel" class="modal__input modal__placeholder phone" placeholder="Phone Number*" name="phone" required
+        minlength="18">
+      <input type="email" class="modal__input modal__placeholder" placeholder="Email*" name="email" required>
+      <textarea cols="30" rows="10" class="modal__textarea modal__placeholder" placeholder="Message"
+        name="message"></textarea>
+      <div class="modal__button-block">
+        <button class="button modal__button">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

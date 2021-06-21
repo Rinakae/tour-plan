@@ -1791,11 +1791,21 @@ template {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
-  z-index: 100;
+  z-index: 103;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0,5s;
   transition: opacity 0,5s;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal__overlay--visible {
@@ -1804,14 +1814,11 @@ template {
 }
 
 .modal__dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  margin: auto;
   max-width: 478px;
+  min-height: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   color: #fff;
   border-radius: 8px;
   z-index: 102;
@@ -1819,7 +1826,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  overflow-y: auto;
+  position: relative;
 }
 
 .modal__dialog--visible {
@@ -2718,16 +2725,6 @@ template {
   }
   .modal__dialog {
     width: 90%;
-  }
-}
-
-@media (max-height: 487px) {
-  .modal__dialog {
-    top: 20px;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    height: 100vh;
-    overflow-y: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
