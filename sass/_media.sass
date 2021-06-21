@@ -19,10 +19,13 @@
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
+  a
+    cursor: unset
   .newsletter
     padding: 92px 0 93px 0
   .logo
     width: 132px
+    cursor: unset
   .navbar
     &-top
       padding-top: 30px
@@ -39,18 +42,27 @@
     &__input
       &-group
         width: 340px
+    &__button
+      cursor: unset
+  .user
+    cursor: unset
   .hotel
     padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
+    &-slider
+      &__button
+        cursor: unset
     &-booking-map
       flex-direction: row
     &-slider
       width: 100%
   .booking
     width: 340px
+    &__button
+      cursor: unset
   .map
     width: 340px
   .reviews
@@ -129,6 +141,25 @@
       margin-top: 56px
       &-links
         margin-right: 0
+  .card
+    &-grid, &-grid-1
+      &-text
+        &__button
+          cursor: unset
+  .subscribe, .reviews-slider, .activcard, .footer, .modal
+    &__button
+      cursor: unset
+  a
+    &:hover
+      color: #BDBDBD
+      text-shadow: none
+
+  button
+    &:hover
+      background: $primary
+      color: $light
+      box-shadow: none
+
   .modal
     &__dialog
       padding: 30px 50px
