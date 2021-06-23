@@ -112,7 +112,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="index.html" class="footer__logo"><img src="img/Best-tour-plan.svg" alt="Logo: Best Tour Plan"
+        <a href="#" class="footer__logo"><img src="img/Best-tour-plan.svg" alt="Logo: Best Tour Plan"
             class="logo footer__logo"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">All categories</h3>
@@ -128,7 +128,7 @@
           </ul>
         </div>
         <!-- /.footer__list -->
-
+  
         <div class="footer__list footer__additional">
           <h3 class="footer__title">Additional information</h3>
           <ul class="footer__ul">
@@ -140,19 +140,29 @@
             <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>
           </ul>
         </div> <!-- /.footer__list -->
-
+  
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
             <a href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
-              target="_blank" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
-            <a href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit" target="_blank"
-              class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="https://www.instagram.com/bestattraveluk/" target="_blank" class="footer__link"><img
-                src="img/instagram.svg" alt="icon: instagram"></a>
+              target="_blank" class="footer__link">
+              <svg class="footer__icon-link">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit" target="_blank" class="footer__link">
+              <svg class="footer__icon-link">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/bestattraveluk/" target="_blank" class="footer__link">
+              <svg class="footer__icon-link">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </div>
         </div> <!-- /.footer__social-network -->
-
+  
         <div class="footer__list footer__legal">
           <h3 class="footer__title">Legal information</h3>
           <ul class="footer__ul">
@@ -162,11 +172,11 @@
             <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
           </ul>
         </div> <!-- /.footer__list -->
-
+  
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-          <ul class="footer__ul">
+          <ul class="footer__ul-icon">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/map-marker.svg" alt="icon: map market" class="footer__icon">
@@ -178,52 +188,62 @@
                 <img src="img/phone-call-footer.svg" alt="icon: phone call" class="footer__icon">
               </div>
               <div class="footer__link-wrapper">
-                Tel (business hours) : <a href="tel: +375252691500" class="footer__tel-link">269 1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel: 52-56-61-38"
-                  class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a>
-                (08:00&#160;am&#160;–&#160;20:00&#160;pm)<br>
-                Tel (hotline) Sunday: <a href="tel: 52-56-61-38"
-                  class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;14:00&#160;pm)
+                Tel (business hours) : <a href="tel:+375252691500" class="footer__tel-link">269 1500</a><br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38"
+                  class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a> (08:00&#160;am&#160;–&#160;20:00&#160;pm)<br>
+                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__tel-link">52&#8209;56&#8209;61&#8209;38</a>
+                (08:00&#160;am&#160;–&#160;14:00&#160;pm)
               </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/email.svg" alt="icon: email" class="footer__icon">
               </div>
-              <a href="mailto: cherly.lawson@example.com" class="footer__email-link">cherly.lawson@example.com</a>
+              <a href="mailto:cherly.lawson@example.com" class="footer__email-link">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div> <!-- /.footer__contact-details -->
-
+  
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a massage</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="footer__input footer__placeholder" placeholder="Your Full Name*" name="name">
-            <input type="text" class="footer__input footer__placeholder" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="footer__input footer__placeholder" placeholder="Your Full Name*" name="name"
+                required>
+            </div>
+            <div class="footer__input-group ">
+              <input type="tel" class="footer__input footer__placeholder phone" placeholder="Phone Number*" name="phone"
+                required minlength="18">
+            </div>
+  
             <textarea cols="30" rows="10" class="footer__textarea footer__placeholder" placeholder="Message"
               name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div> <!-- /.footer__contact-form -->
-
+  
       </div> <!-- /.footer-wrapper -->
-
+  
       <div class="footer__condition">
         <div class="footer__condition-links">
           <a href="#" class="footer__condition-link">Disclaimer</a>
           <a href="#" class="footer__condition-link">Conditions of use</a>
           <a href="#" class="footer__condition-link">Cancellation policy</a>
         </div>
-        <img src="img/pay-card.png" alt="Paycards" class="footer__condition-paycard">
+        <img src="img/pay-card.jpg" alt="Paycards" class="footer__condition-paycard">
       </div>
-
+  
     </div>
-
+  
   </footer>
 
 
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

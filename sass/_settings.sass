@@ -14,11 +14,26 @@ img
   font-size: 14px
 a
   &:hover
-    color: $light
-    text-shadow: $light 1px 0 10px
+    text-decoration: underline
 
 button
   &:hover
-    background: $dark
+    background-color: $dark
     color: $light
     box-shadow: inset 0 0 0 3px $primary
+.hotel
+  &-slider
+    &__button
+      &:hover
+        background-color: transparent
+        box-shadow: none
+        border: 1px solid $light
+        border-radius: 50%
+.reviews
+  &-slider
+    &__button
+      &:hover
+        background-color: transparent
+        box-shadow: none
+        border: 1px solid $footer-text-color
+        border-radius: 50%

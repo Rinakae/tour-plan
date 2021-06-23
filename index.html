@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>  
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="preload" href="https://fonts.gstatic.com">
-<link rel="preload" href="https://fonts.gstatic.com">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="preload" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/aos.css">
@@ -256,7 +256,7 @@
             <span class="card-grid-1-text__oldprice">$ 10,500</span>        
             <div class="card-grid-1-text__price">
             <strong class="card-grid-1-text__pricetag">$ 8,500</strong>
-            <button class="card-grid-1-text__button">Book Now</button>
+            <button data-toggle="modal" class="card-grid-1-text__button">Book Now</button>
             </div>
             </div><!-- /.card-grid-1-text -->
           </div> <!-- /.card-grid-1 -->      
@@ -283,7 +283,7 @@
               <span class="card-grid-text__oldprice">$ 8,500</span>
               <div class="card-grid-text__price">
                 <strong class="card-grid-text__pricetag">$ 3,000</strong>
-                <button class="card-grid-text__button">Book Now</button>
+                <button data-toggle="modal" class="card-grid-text__button">Book Now</button>
               </div>
             </div><!-- /.card-grid-text -->
           </div> <!-- /.card-grid-->
@@ -310,7 +310,7 @@
               <span class="card-grid-text__oldprice">$ 10,500</span>
               <div class="card-grid-text__price">
                 <strong class="card-grid-text__pricetag">$ 9,500</strong>
-                <button class="card-grid-text__button">Book Now</button>
+                <button data-toggle="modal" class="card-grid-text__button">Book Now</button>
               </div>
             </div><!-- /.card-grid-text -->
           </div> <!-- /.card-grid-->        
@@ -337,7 +337,7 @@
               <span class="card-grid-text__oldprice">$ 4,500</span>
               <div class="card-grid-text__price">
                 <strong class="card-grid-text__pricetag">$ 2,500</strong>
-                <button class="card-grid-text__button">Book Now</button>
+                <button data-toggle="modal" class="card-grid-text__button">Book Now</button>
               </div>
             </div><!-- /.card-grid-text -->
           </div> <!-- /.card-grid-->
@@ -364,7 +364,7 @@
               <span class="card-grid-text__oldprice">$ 6,500</span>
               <div class="card-grid-text__price">
                 <strong class="card-grid-text__pricetag">$ 3,500</strong>
-                <button class="card-grid-text__button">Book Now</button>
+                <button data-toggle="modal" class="card-grid-text__button">Book Now</button>
               </div>
             </div><!-- /.card-grid-text -->
           </div> <!-- /.card-grid-->
@@ -381,7 +381,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
   
-      <form action="send-2.php" method="POST" class="subscribe form">
+      <form action="send.php" method="POST" class="subscribe form">
         <div class="subscribe__wrapper">
           <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
         </div>
@@ -438,11 +438,7 @@
               <p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Ea laborum, atque vitae accusamus consequatur fugiat, amet, sed deleniti nisi quos sint necessitat
                 ibus expedita voluptates voluptas architecto nemo. Nostrum, ipsum. Eum optio vero vel quo voluptatem e
-                rror, beatae laudantium velit cum reiciendis. Amet sit voluptates deserunt labore molestiae minus quo
-                d eius eaque ipsum, officia eligendi sequi voluptate ea corporis, consequuntur molestias et maxime, do
-                or aperiam enim fugit ducimus dicta! Quasi voluptate obcaecati exercitationem sit neque assumenda vel.
-                Voluptatum odit fugiat incidunt dolores! Saepe dicta in quos nulla eum tempore sunt rerum est nisi rep
-                ellendus sequi perferendis reprehenderit cupiditate unde, laboriosam soluta?</p>
+                rror, beatae laudantium velit cum reiciendis.</p>
             </div>
           </div>
         </div> <!-- /.swiper-wrapper -->
@@ -461,25 +457,25 @@
         <div class="activcard" data-aos="flip-down" data-aos-delay="100" data-aos-duration="900">
           <img src="img/activ-1.jpg" alt="The curious corner of chamarel" class="activcard__image">
           <h3 class="activcard__title">The curious corner<br>of chamarel</h3>
-          <button class="activcard__button">Book Now</button>
+          <button data-toggle="modal" class="activcard__button">Book Now</button>
         </div> 
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="300" data-aos-duration="800">
           <img src="img/activ-2.jpg" alt="Gymkhana club golf course" class="activcard__image">
           <h3 class="activcard__title">Gymkhana club golf<br>course</h3>
-          <button class="activcard__button">Book Now</button>
+          <button data-toggle="modal" class="activcard__button">Book Now</button>
         </div>
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="200" data-aos-duration="900">
           <img src="img/activ-3.jpg" alt="Tamarind falls hiking trip - full day" class="activcard__image">
           <h3 class="activcard__title">Tamarind falls hiking<br>trip - full day</h3>
-          <button class="activcard__button">Book Now</button>
+          <button data-toggle="modal" class="activcard__button">Book Now</button>
         </div>
 
         <div class="activcard" data-aos="flip-down" data-aos-delay="400" data-aos-duration="800">
           <img src="img/activ-4.jpg" alt="The blue marine discovery quest" class="activcard__image">
           <h3 class="activcard__title">The blue marine discovery<br>quest</h3>
-          <button class="activcard__button">Book Now</button>
+          <button data-toggle="modal" class="activcard__button">Book Now</button>
         </div>
       </div> <!-- /.activities-wrapper -->
     </div> <!-- /.container -->
@@ -522,9 +518,25 @@
           <div class="footer__social-links">
             <a href="https://www.facebook.com/TourRadar/?eid=ARDM8IMGp51gdGJGLFdIlrWFpDI1Z8h0rIuro3GTFvLVHsa4AkXYx1l6PCkiOtQjO5wnpBajxbczpyUx"
                target="_blank" 
-               class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
-            <a href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit" target="_blank" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="https://www.instagram.com/bestattraveluk/" target="_blank" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
+               class="footer__link">
+               <svg class="footer__icon-link">
+                 <use xlink:href="img/sprite.svg#facebook"></use>
+               </svg>
+              </a>
+            <a href="https://www.youtube.com/watch?v=Tlt-GF3SVsw&ab_channel=Homedit" 
+              target="_blank" 
+              class="footer__link">
+              <svg class="footer__icon-link">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/bestattraveluk/" 
+              target="_blank" 
+              class="footer__link">
+              <svg class="footer__icon-link">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </div>
         </div> <!-- /.footer__social-network -->
 
@@ -541,7 +553,7 @@
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-          <ul class="footer__ul">
+          <ul class="footer__ul-icon">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/map-marker.svg" alt="icon: map market" class="footer__icon">
