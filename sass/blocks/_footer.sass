@@ -84,12 +84,6 @@
   &__icon
     &-wrapper
       min-width: 40px
-    &-link
-      width: 22px
-      height: 22px
-      fill: #BDBDBD
-      &:hover
-        fill: $light
   &__text
     font-style: normal
     font-weight: normal
@@ -100,6 +94,11 @@
   &__link
     text-decoration: none
     color: inherit
+    &-icon
+      line-height: 0
+      &:hover
+        border: 1px solid $light
+        border-radius: 50%
   &__input
     width: 100%
     background-color: #fff
